@@ -1,0 +1,11 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "this is my fullstack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mazhar jamill",
+  "license": "ISC"
+}
