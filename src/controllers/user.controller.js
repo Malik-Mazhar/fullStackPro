@@ -88,7 +88,7 @@ const registerUser = asyncHandler( async (req, res ) => {
 });
 
 
-const loginUser = asyncHandler(async () => {
+const loginUser = asyncHandler(async (req, res) => {
     // req.body = Get user deta
     // validation
     // check user already exiest or not Find the user
@@ -97,8 +97,9 @@ const loginUser = asyncHandler(async () => {
     // sand cookie
 
     const { username, email, password } = req.body;
+    console.log("username, or email", email, email, password)
 
-    if(!username || !email){
+    if(!username && !email){
         throw new ApiError(400, "username or email required")
     };
 
